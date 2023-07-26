@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fruit Brust</title>
 
+  <link rel="stylesheet" href="styles/style.css">
   <!--Set up Tailwind + Daisy UI -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -31,7 +32,7 @@
   <!-- Navbar section start -->
   <main class="container mx-auto">
     <nav>
-      <div class="flex justify-around items-center h-32 bg-[#F85559] rounded-full">
+      <div class="flex justify-around items-center h-32 bg-[#F85559] rounded-full mb-14 text-white">
 
         <div class="flex items-center gap-8">
           <a class="">Home</a>
@@ -53,9 +54,47 @@
         </div>
       </div>
     </nav>
+
+    <!--Banner section start-->
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="./images/banner1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a> 
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="./images/banner2.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a> 
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="./images/banner3.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a> 
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="./images/banner4.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a> 
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative  text-center">
+      <h2 class=" text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h2>
+      <p class="font-semibold">We supply highly quality organic products</p>
+      <button class="btn btn-active bg-[#F85559]">Shop Now</button>
+
+    </div>
+
   </main>
-
-
 
 </body>
 
