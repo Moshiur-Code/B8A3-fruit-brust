@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Brust</title>
-    
-    <!--Set up Tailwind + Daisy UI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Custom Tailwind-->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Brust</title>
+
+  <!--Set up Tailwind + Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Tailwind-->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
+      }
+    }
+  </script>
 
-      <!-- Font awesome icon -->
-      <script src="https://kit.fontawesome.com/e182c4ca29.js" crossorigin="anonymous"></script>      
+  <!-- Font awesome icon -->
+  <script src="https://kit.fontawesome.com/e182c4ca29.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Navbar section start -->
-    <nav class="">
-        <div class="flex justify-around items-center">
-            <div class="flex items-center gap-8">
-              <a class="">Home</a>
-              <a class="">About Us</a>
-              <a class="">Shop</a>
-              <a class="">All Fruits</a>
-            </div>
-            
-            <div class="flex items-center text-center gap-2">
-                <img class="w-14 h-16" src="./images/logo.png" alt="">
-                <h4 class="text-4xl">Fruit Burst</h4>
-            </div>
-            
-            <div class="flex-none gap-2">
-              <div class="flex form-control md:w-96 h-14">
-                <input type="text" placeholder="Search" class="input input-bordered rounded-full md:w-auto"/>
-               <span><i class="fa-solid fa-magnifying-glass border-2"></i></span> 
-              </div>
-            </div>
-        </div>
-    </nav>
+  <!-- Navbar section start -->
+  <main class="container mx-auto">
+    <nav>
+      <div class="flex justify-around items-center h-32 bg-[#F85559] rounded-full">
 
- 
+        <div class="flex items-center gap-8">
+          <a class="">Home</a>
+          <a class="">About Us</a>
+          <a class="">Shop</a>
+          <a class="">All Fruits</a>
+        </div>
+
+        <div class="flex items-center text-center gap-2">
+          <img class="w-14 h-16" src="./images/logo.png" alt="">
+          <h4 class="text-4xl">Fruit Burst</h4>
+        </div>
+
+        <div class="flex-none gap-2">
+          <div class="flex form-control w-96 h-14">
+            <input type="text" placeholder="Search" class="input input-bordered rounded-full md:w-auto" />
+            <!-- <span><i class="fa-solid fa-magnifying-glass border-2"></i></span>  -->
+          </div>
+        </div>
+      </div>
+    </nav>
+  </main>
+
+
+
 </body>
+
 </html>
