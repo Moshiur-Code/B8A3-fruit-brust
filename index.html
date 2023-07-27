@@ -32,7 +32,7 @@
   <!-- Navbar section start -->
   <main class="container mx-auto">
     <nav>
-      <div class="flex justify-around items-center h-32 bg-[#F85559] rounded-full mb-14 text-white">
+      <div class="flex justify-around items-center h-28 bg-[#F85559] rounded-full mb-14 text-white">
 
         <div class="flex items-center gap-8">
           <a class="">Home</a>
@@ -46,11 +46,19 @@
           <h4 class="text-4xl">Fruit Burst</h4>
         </div>
 
-        <div class="flex-none gap-2">
-          <div class="flex form-control w-96 h-14">
-            <input type="text" placeholder="Search" class="input input-bordered rounded-full md:w-auto" />
-            <!-- <span><i class="fa-solid fa-magnifying-glass border-2"></i></span>  -->
-          </div>
+         <!-- Search bar -->
+         <div class="flex items-center justify-center">
+          <form method="GET">
+            <div class="relative rounded-full">
+              <span class="absolute inset-y-0 right-0 flex items-center pl-2">
+                <button type="submit" class="p-1 focus:outline-none focus:shadow-outline">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </button>
+              </span>
+              
+              <input type="search" name="q" class="rounded-full py-3 text-sm text-white bg-gray-900 pl-40 focus:outline-none focus:bg-white focus:text-gray-900" placeholder="Search..." autocomplete="off">
+            </div>
+          </form>
         </div>
       </div>
     </nav>
